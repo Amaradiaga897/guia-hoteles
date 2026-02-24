@@ -1,0 +1,27 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Nodejs",
+  "keywords": [
+    "Nuestro",
+    "primer",
+    "proyecto",
+    "de",
+    "NodeJS"
+  ],
+  "homepage": "https://github.com/Amaradiaga897/guia-hoteles#readme",
+  "bugs": {
+    "url": "https://github.com/Amaradiaga897/guia-hoteles/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amaradiaga897/guia-hoteles.git"
+  },
+  "license": "ISC",
+  "author": "Andres Maradiaga",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
