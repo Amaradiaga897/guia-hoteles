@@ -33,3 +33,8 @@ footer{
 .footer-address-icon{
     padding-right: 10px;
 }
+
+.breadcrumb{
+    background-color: rgb(234, 233, 233);
+    padding: 10px;
+}
