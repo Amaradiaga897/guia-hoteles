@@ -33,14 +33,14 @@
         <div id="hotelCarousel" class="carousel slide mb-2" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="img/banner-roatan.jpg" class="d-block w-100" alt="Promoción Roatán" style="height: 350px; object-fit: cover;">
+            <img src="img/banner-roatan.jpg" class="d-block w-100" alt="Promoción Roatán" style="height: 450px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
                 <h5>¡Verano en Roatán!</h5>
                 <p>Aprovecha paquetes todo incluido este mes.</p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="img/banner-copan.jpg" class="d-block w-100" alt="Promoción Copán" style="height: 350px; object-fit: cover;">
+            <img src="img/banner-copan.jpg" class="d-block w-100" alt="Promoción Copán" style="height: 450px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
                 <h5>Cultura en Copán Ruinas</h5>
                 <p>Escápate a la historia maya con precios especiales.</p>
@@ -102,7 +102,7 @@
                 <img src="img/henrymorgan.jpg" class="card-img-top" alt="Henry Morgan Resorts">
                 <p class="card-text">Disfruta de una experiencia todo incluido frente a las aguas cristalinas de West Bay.</p>
             </div>
-            <div class="p-3"><button class="btn w-100">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
         </div>
 
         <div class="card card-hotel d-flex flex-column justify-content-between ms-2 mb-3" style="width: 18rem;">
@@ -112,7 +112,7 @@
                 <img src="img/ensenada.jpg" class="card-img-top" alt="La Ensenada">
                 <p class="card-text">Relajación total en un resort de playa con piscinas espectaculares y ambiente familiar.</p>
             </div>
-            <div class="p-3"><button class="btn w-100">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
         </div>
 
         <div class="card card-hotel d-flex flex-column justify-content-between ms-2 mb-3" style="width: 18rem;">
@@ -122,7 +122,7 @@
                 <img src="img/copantl.jpg" class="card-img-top" alt="Hotel Copantl">
                 <p class="card-text">Tradición y confort en el corazón de la ciudad industrial, con las mejores vistas desde el área de piscina.</p>
             </div>
-            <div class="p-3"><button class="btn w-100">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
         </div>
 
         <div class="card card-hotel d-flex flex-column justify-content-between ms-2 mb-3" style="width: 18rem;">
@@ -132,7 +132,7 @@
                 <img src="img/intercontinental.jpg" class="card-img-top" alt="Hotel Intercontinental">
                 <p class="card-text">Lujo y elegancia urbana con gastronomía de primer nivel junto al centro comercial Multiplaza.</p>
             </div>
-            <div class="p-3"><button class="btn w-100">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
         </div>
 
         <div class="card card-hotel d-flex flex-column justify-content-between ms-2 mb-3" style="width: 18rem;">
@@ -142,7 +142,7 @@
                 <img src="img/jakami.jpg" class="card-img-top" alt="Hotel Jakami">
                 <p class="card-text">Una opción acogedora y tranquila para tu descanso en la ciudad de las carretas.</p>
             </div>
-            <div class="p-3"><button class="btn w-100">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
         </div>
 
         <div class="card card-hotel d-flex flex-column justify-content-between ms-2 mb-3" style="width: 18rem;">
@@ -152,7 +152,42 @@
                 <img src="img/titos.jpg" class="card-img-top" alt="Hotel Titos Colonial">
                 <p class="card-text">Vive el encanto colonial y el clima fresco de la ciudad más alta de Honduras.</p>
             </div>
-            <div class="p-3"><button class="btn w-100">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="contacto" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contacto">Contacto con el hotel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Tu email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="huespedes" class="form-label">Numero de huespedes:</label>
+                            <input type="number" class="form-control" id="huespedes">
+                        </div>
+                        <div class="mb-3">
+                            <label for="habitaciones" class="form-label">Numero de habitaciones:</label>
+                            <input type="number" class="form-control" id="habitaciones">
+                        </div>
+                        <div class="mb-3">
+                            <label for="consulta" class="form-label">Información extra:</label>
+                            <textarea class="form-control" id="consulta" rows="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
         </div>
     </div>
 
