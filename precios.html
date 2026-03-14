@@ -39,89 +39,117 @@
                 <li class="breadcrumb-item active" aria-current="page"><b>Precios</b></li>
             </ol>
         </nav>
-        
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="table-dark">
-                    <th>Calidad</th>
-                    <th>Copán</th>
-                    <th>Islas de la Bahía</th>
-                    <th>Trujillo</th>
-                    <th>La Ceiba</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$200</td>
-                        <td>$250</td>
-                        <td>$180</td>
-                        <td>$220</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$150</td>
-                        <td>$200</td>
-                        <td>$130</td>
-                        <td>$170</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$100</td>
-                        <td>$150</td>
-                        <td>$80</td>
-                        <td>$120</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$75</td>
-                        <td>$125</td>
-                        <td>$55</td>
-                        <td>$95</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                        </td>
-                        <td>$65</td>
-                        <td>$110</td>
-                        <td>$40</td>
-                        <td>$75</td>
-                    </tr>
 
-                </tbody>
-            </table>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="compara-tab" data-bs-toggle="tab" data-bs-target="#compara" type="button" role="tab" aria-controls="compara" aria-selected="true">Compara</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tarjetas-tab" data-bs-toggle="tab" data-bs-target="#tarjetas" type="button" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab" data-bs-target="#comentarios" type="button" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active p-3" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="table-dark">
+                            <th>Calidad</th>
+                            <th>Copán</th>
+                            <th>Islas de la Bahía</th>
+                            <th>Trujillo</th>
+                            <th>La Ceiba</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>$200</td>
+                                <td>$250</td>
+                                <td>$180</td>
+                                <td>$220</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>$150</td>
+                                <td>$200</td>
+                                <td>$130</td>
+                                <td>$170</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>$100</td>
+                                <td>$150</td>
+                                <td>$80</td>
+                                <td>$120</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>$75</td>
+                                <td>$125</td>
+                                <td>$55</td>
+                                <td>$95</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span>
+                                </td>
+                                <td>$65</td>
+                                <td>$110</td>
+                                <td>$40</td>
+                                <td>$75</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>   
+
+        <div class="tab-pane fade p-3" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+            <div class="d-flex justify-content-center my-4">
+                <div class="card shadow-sm border-0" style="width: 18rem;">
+                    <div class="card-header bg-dark text-white fw-bold">
+                        Tarjetas aceptadas
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-credit-card me-2"></i> Tarjeta básica
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-credit-card-2-front-fill text-primary me-2"></i> Tarjeta VIP
+                        </li>
+                        <li class="list-group-item d-flex align-items-center bg-light">
+                            <i class="bi bi-award-fill text-warning me-2"></i> Tarjeta Black
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="d-flex justify-content-center my-4">
-            <div class="card shadow-sm border-0" style="width: 18rem;">
-                <div class="card-header bg-dark text-white fw-bold">
-                    Tarjetas aceptadas
+        <div class="tab-pane fade p-3" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h6 class="mb-1 fw-bold">Fernando Aguilar</h6>
+                    <p class="mb-1">¡Excelente guía! Me ayudó mucho a decidir mi viaje a Roatán.</p>
+                    <small class="text-muted">Hace 2 días</small>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex align-items-center">
-                        <i class="bi bi-credit-card me-2"></i> Tarjeta básica
-                    </li>
-                    <li class="list-group-item d-flex align-items-center">
-                        <i class="bi bi-credit-card-2-front-fill text-primary me-2"></i> Tarjeta VIP
-                    </li>
-                    <li class="list-group-item d-flex align-items-center bg-light">
-                        <i class="bi bi-award-fill text-warning me-2"></i> Tarjeta Black
-                    </li>
-                </ul>
-            </div>
+                </div>
         </div>
 
     </div>
