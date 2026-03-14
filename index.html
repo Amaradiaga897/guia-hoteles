@@ -152,7 +152,7 @@
                 <img src="img/titos.jpg" class="card-img-top" alt="Hotel Titos Colonial">
                 <p class="card-text">Vive el encanto colonial y el clima fresco de la ciudad más alta de Honduras.</p>
             </div>
-            <div class="p-3"><button class="btn w-100" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
+            <div class="p-3"><button class="btn w-100 btn-outline-success" id="reservar" data-bs-toggle="modal" data-bs-target="#contacto">Reservar</button></div>
         </div>
     </div>
 
@@ -225,6 +225,22 @@
             $('[data-bs-toggle="popover"]').popover();
             $('.carousel').carousel({
                 interval: 3000
+            });
+            $('#contacto').on('show.bs.modal', function(e){
+                console.log('el modal se esta mostrando');
+                $('#reservar').removeClass('btn-outline-success');
+                $('#reservar').addClass('btn-primary');
+                $('#reservar').prop('disabled', true);
+            });
+            $('#contacto').on('shown.bs.modal', function(e){
+                console.log('el modal se mostró');
+            });
+            $('#contacto').on('hide.bs.modal', function(e){
+                console.log('el modal se oculta');
+            });
+            $('#contacto').on('hidden.bs.modal', function(e){
+                console.log('el modal se ocultó');
+                $('#reservar').prop('disabled', false);
             });
         })
 </script>
