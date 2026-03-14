@@ -1,0 +1,47 @@
+.jumbotron {
+  background-color: #fffa19;
+  color: black;
+  height: 12em;
+  align-content: center;
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: rgb(119, 102, 73);
+  color: white;
+}
+
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: #fffa19;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.card-hotel {
+  flex: 1 300px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.card-hotel .btn {
+  width: 100%;
+}
+
+.footer-address-icon {
+  padding-right: 10px;
+}
+
+.breadcrumb {
+  background-color: rgb(234, 233, 233);
+  padding: 10px;
+}
+
+.tab-content {
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
