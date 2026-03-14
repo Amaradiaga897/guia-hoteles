@@ -64,16 +64,29 @@
             <li class="breadcrumb-item"><a href="precios.html">Precios</a></li>
         </ol>
         </nav>
+
         <div class="d-flex justify-content-between">
             <div class="col-sm-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Como funciona?</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Donde puedo reservar?</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Como pago?</button>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <div class="col-sm-3 collapse multi-collapse" id="funciona">
                 <h4>¿Como funciona?</h4>
                 <p>Buscá hoteles de acuerdo a tu preferencia</p>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3collapse multi-collapse" id="reserva">
                 <h4>¿Donde puedo reservar?</h4>
                 <p>Elije la ciudad que te interese y luego realiza la reservacion con tus datos</p>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3collapse multi-collapse" id="pago">
                 <h4>¿Cuales son las opciones de pago?</h4>
                 <p>Puedes reservar con cualquier tarjeta de credito o debito sin importar la marca</p>
             </div>
