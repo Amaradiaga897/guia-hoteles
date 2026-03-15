@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Guia Hoteles</title>
 
-    <!-- build: css dist/index.css-->
+    <!-- build: css css/index.css-->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -221,35 +221,11 @@
             </div>
     </footer>
 
-    <!-- build: js dist/index.js-->
+    <!-- build: js js/main.js-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(function () {
-            $('[data-bs-toggle="tooltip"]').tooltip();
-            $('[data-bs-toggle="popover"]').popover();
-            $('.carousel').carousel({
-                interval: 3000
-            });
-            $('#contacto').on('show.bs.modal', function(e){
-                console.log('el modal se esta mostrando');
-                $('#reservar').removeClass('btn-outline-success');
-                $('#reservar').addClass('btn-primary');
-                $('#reservar').prop('disabled', true);
-            });
-            $('#contacto').on('shown.bs.modal', function(e){
-                console.log('el modal se mostró');
-            });
-            $('#contacto').on('hide.bs.modal', function(e){
-                console.log('el modal se oculta');
-            });
-            $('#contacto').on('hidden.bs.modal', function(e){
-                console.log('el modal se ocultó');
-                $('#reservar').prop('disabled', false);
-            });
-        })
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild-->
-     
+
   </body>
 </html>
